@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Functions>
+  <Function Key="Tournament">
+    <Setting Key="AllTournament" SpName="GetAllTournament" DbName="ChessResults">
+      <Mapping DataField="Id" ObjectProperty="Id" />
+      <Mapping DataField="Name" ObjectProperty="Name" />
+      <Mapping DataField="Organizer" ObjectProperty="Organizer" />
+      <Mapping DataField="Federation" ObjectProperty="Federation" />
+      <Mapping DataField="Director" ObjectProperty="Director" />
+      <Mapping DataField="ChiefArbiter" ObjectProperty="ChiefArbiter" />
+      <Mapping DataField="Location" ObjectProperty="Location" />
+      <Mapping DataField="RatingCalculation" ObjectProperty="RatingCalculation" />
+      <Mapping DataField="StartDate" ObjectProperty="StartDate" />
+      <Mapping DataField="EndDate" ObjectProperty="EndDate" />
+      <Mapping DataField="Rating" ObjectProperty="Rating" />
+      <Mapping DataField="Category" ObjectProperty="Category" />
+      <Mapping DataField="LatestUpdated" ObjectProperty="LatestUpdated" />
+      <Mapping DataField="IsFinished" ObjectProperty="IsFinished" />
+      <Mapping DataField="NumberOfRounds" ObjectProperty="NumberOfRounds" />
+    </Setting>
+    <Setting Key="InsertTournament" SpName="InsertTournament" DbName="ChessResults">
+      <Mapping DataField="Id" ObjectProperty="Id" />
+      <Mapping DataField="Name" ObjectProperty="Name" />
+      <Mapping DataField="Organizer" ObjectProperty="Organizer" />
+      <Mapping DataField="Federation" ObjectProperty="Federation" />
+      <Mapping DataField="Director" ObjectProperty="Director" />
+      <Mapping DataField="ChiefArbiter" ObjectProperty="ChiefArbiter" />
+      <Mapping DataField="Location" ObjectProperty="Location" />
+      <Mapping DataField="RatingCalculation" ObjectProperty="RatingCalculation" />
+      <Mapping DataField="StartDate" ObjectProperty="StartDate" />
+      <Mapping DataField="EndDate" ObjectProperty="EndDate" />
+      <Mapping DataField="Rating" ObjectProperty="Rating" />
+      <Mapping DataField="Category" ObjectProperty="Category" />
+      <Mapping DataField="LatestUpdated" ObjectProperty="LatestUpdated" />
+      <Mapping DataField="IsFinished" ObjectProperty="IsFinished" />
+      <Mapping DataField="NumberOfRounds" ObjectProperty="NumberOfRounds" />
+    </Setting>
+    <Setting Key="QueryTournamentById" SpName="QueryTournamentById" DbName="ChessResults">
+      <Mapping DataField="Id" ObjectProperty="Id" />
+      <Mapping DataField="Name" ObjectProperty="Name" />
+      <Mapping DataField="Organizer" ObjectProperty="Organizer" />
+      <Mapping DataField="Federation" ObjectProperty="Federation" />
+      <Mapping DataField="Director" ObjectProperty="Director" />
+      <Mapping DataField="ChiefArbiter" ObjectProperty="ChiefArbiter" />
+      <Mapping DataField="Location" ObjectProperty="Location" />
+      <Mapping DataField="RatingCalculation" ObjectProperty="RatingCalculation" />
+      <Mapping DataField="StartDate" ObjectProperty="StartDate" />
+      <Mapping DataField="EndDate" ObjectProperty="EndDate" />
+      <Mapping DataField="Rating" ObjectProperty="Rating" />
+      <Mapping DataField="Category" ObjectProperty="Category" />
+      <Mapping DataField="LatestUpdated" ObjectProperty="LatestUpdated" />
+      <Mapping DataField="IsFinished" ObjectProperty="IsFinished" />
+      <Mapping DataField="NumberOfRounds" ObjectProperty="NumberOfRounds" />
+    </Setting>
+    <Setting Key="DeleteTournamentById" SpName="DeleteTournamentById" DbName="ChessResults">
+      <Mapping DataField="Id" ObjectProperty="Id" />
+      <Mapping DataField="Name" ObjectProperty="Name" />
+      <Mapping DataField="Organizer" ObjectProperty="Organizer" />
+      <Mapping DataField="Federation" ObjectProperty="Federation" />
+      <Mapping DataField="Director" ObjectProperty="Director" />
+      <Mapping DataField="ChiefArbiter" ObjectProperty="ChiefArbiter" />
+      <Mapping DataField="Location" ObjectProperty="Location" />
+      <Mapping DataField="RatingCalculation" ObjectProperty="RatingCalculation" />
+      <Mapping DataField="StartDate" ObjectProperty="StartDate" />
+      <Mapping DataField="EndDate" ObjectProperty="EndDate" />
+      <Mapping DataField="Rating" ObjectProperty="Rating" />
+      <Mapping DataField="Category" ObjectProperty="Category" />
+      <Mapping DataField="LatestUpdated" ObjectProperty="LatestUpdated" />
+      <Mapping DataField="IsFinished" ObjectProperty="IsFinished" />
+      <Mapping DataField="NumberOfRounds" ObjectProperty="NumberOfRounds" />
+    </Setting>
+    <Setting Key="UpdateTournament" SpName="UpdateTournament" DbName="ChessResults">
+      <Mapping DataField="Id" ObjectProperty="Id" />
+      <Mapping DataField="Name" ObjectProperty="Name" />
+      <Mapping DataField="Organizer" ObjectProperty="Organizer" />
+      <Mapping DataField="Federation" ObjectProperty="Federation" />
+      <Mapping DataField="Director" ObjectProperty="Director" />
+      <Mapping DataField="ChiefArbiter" ObjectProperty="ChiefArbiter" />
+      <Mapping DataField="Location" ObjectProperty="Location" />
+      <Mapping DataField="RatingCalculation" ObjectProperty="RatingCalculation" />
+      <Mapping DataField="StartDate" ObjectProperty="StartDate" />
+      <Mapping DataField="EndDate" ObjectProperty="EndDate" />
+      <Mapping DataField="Rating" ObjectProperty="Rating" />
+      <Mapping DataField="Category" ObjectProperty="Category" />
+      <Mapping DataField="LatestUpdated" ObjectProperty="LatestUpdated" />
+      <Mapping DataField="IsFinished" ObjectProperty="IsFinished" />
+      <Mapping DataField="NumberOfRounds" ObjectProperty="NumberOfRounds" />
+    </Setting>
+  </Function>
+</Functions>
+
