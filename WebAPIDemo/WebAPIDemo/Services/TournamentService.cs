@@ -12,40 +12,41 @@ namespace WebAPIDemo.Services
 {
     public class TournamentService: ITournamentService
     {
+        private readonly IDynamicRepository dynamicRepository;
+        public TournamentService(IDynamicRepository dynamicRepo)
+        {
+            dynamicRepository = dynamicRepo;
+        }
         public void DeleteTournament(int id)
         {
-            var repository = new DynamicRepository();
             var command = new DeleteTournamentByIdCriteria()
             {
                 Id = id
             };
 
-           repository.Execute(command);
+            dynamicRepository.Execute(command);
         }
 
         public IEnumerable<Tournament> GetTournament()
         {
-            var repository = new DynamicRepository();
             var criteria = new GetAllTournamentCriteria();
-            var tournament = repository.Fetch<Tournament>(criteria);
+            var tournament = dynamicRepository.Fetch<Tournament>(criteria);
             return tournament;
         }
 
         public Tournament FindTournamentById(int id)
         {
-            var repository = new DynamicRepository();
             var criteria = new QueryTournamentByIdCriteria
             {
                 Id = id
             };
 
-            var tournament = repository.Get<Tournament>(criteria);
+            var tournament = dynamicRepository.Get<Tournament>(criteria);
             return tournament;
         }
 
         public IEnumerable<Tournament> InsertTournament(Tournament tournament)
         {
-            var repository = new DynamicRepository();
             var criteria = new InsertTournamentCriteria()
             {
                 Id = tournament.Id,
@@ -65,13 +66,12 @@ namespace WebAPIDemo.Services
                 NumberOfRounds = tournament.NumberOfRounds
             };
 
-            var touranments = repository.Fetch<Tournament>(criteria);
+            var touranments = dynamicRepository.Fetch<Tournament>(criteria);
             return touranments;
         }
 
         public void UpdateTournament(int id,[FromBody] Tournament tournament)
         {
-            var repository = new DynamicRepository();
             var command = new InsertTournamentCriteria()
             {
                 Id = id,
@@ -91,7 +91,7 @@ namespace WebAPIDemo.Services
                 NumberOfRounds = tournament.NumberOfRounds
             };
 
-            repository.Execute(command);
+            dynamicRepository.Execute(command);
 
         }
     }

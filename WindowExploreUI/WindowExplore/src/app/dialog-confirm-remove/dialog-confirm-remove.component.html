@@ -1,0 +1,10 @@
+<div class="header">  
+  <h1 mat-dialog-title>Remove File </h1>
+</div>
+<div mat-dialog-content>
+  <p>Are you sure you want to remove the hero <em>{{data.name}}</em> ?</p>
+</div>
+<div mat-dialog-actions>  
+  <button mat-raised-button color="primary" (click)="onDeleteClick()" cdkFocusInitial>Delete</button>
+  <button mat-raised-button (click)="onCancelClick()">Cancel</button>
+</div>

@@ -1,0 +1,7 @@
+.mat-raised-button:first{
+    margin-right: auto;
+}
+
+mat-grid-tile {
+    background: lightblue;
+  }
